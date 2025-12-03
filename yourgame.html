@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Publicar Jogo - Mido Fenda Studio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-top">
+    <div class="logo">Mido <span>Fenda</span> Studio</div>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="download.html">Download</a>
+  <a href="store.html">Store</a>
+  <a href="media.html">Official media pages</a>
+  <a href="settings.html">Settings</a>
+  <a href="about.html">About</a>
+  <a href="yourgame.html" class="active">Your Game</a>
+</nav>
+
+<header class="topbar">
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+  <div class="top-title">Publicar seu Jogo</div>
+</header>
+
+<main class="content">
+  <h2>Envie seu jogo</h2>
+  <p>Preencha o formulário abaixo. Para arquivos APK use um link do Drive/MediaFire/Dropbox. (Se quiser que eu implemente backend para upload direto, eu posso depois.)</p>
+
+  <form id="publish-form" class="publish-form">
+    <input id="title" type="text" placeholder="Nome do jogo" required>
+    <input id="img" type="text" placeholder="URL da imagem do jogo (opcional)">
+    <textarea id="description" placeholder="Descrição do jogo" rows="4"></textarea>
+    <input id="apk" type="text" placeholder="Link do APK (Google Drive / MediaFire)" required>
+    <button type="submit" class="btn-cta">Publicar</button>
+  </form>
+
+  <p class="note">Os jogos publicados aparecem na página de Downloads.</p>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
